@@ -1,12 +1,10 @@
-    pdfmagazin urlrewriter
-    Version 0.1
-    Configuration
+<h2>Brief</h2>
+    This is the python code for flexget. Put it into the "/usr/local/lib/python2.7/dist-packages/flexget/plugins/sites/".   
+<h2>Configuration</h2>
+
     pdfmagazin:
       filehosters_re:
         - novafile\.com/*
       parse: yes
-    filehosters_re: Only add links that match any of the regular expressions 
-      listed under filehosters_re.
-    For example, to use jdownloader 2 as output, you would use the exec plugin:
     exec:
       - echo "text={{urls}}" >> "/path/to/jd2/folderwatch/{{title}}.crawljob"
